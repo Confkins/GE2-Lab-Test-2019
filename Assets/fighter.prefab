@@ -10,6 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5524477041282564758}
   - component: {fileID: 5524477041282564749}
+  - component: {fileID: 7962681900029286454}
+  - component: {fileID: 346191528265329093}
+  - component: {fileID: 4237151226917088626}
+  - component: {fileID: 4551333793400092958}
+  - component: {fileID: 7602893527180212142}
+  - component: {fileID: 6533560363297308671}
   m_Layer: 9
   m_Name: fighter
   m_TagString: Untagged
@@ -136,6 +142,119 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &7962681900029286454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7592bd6412b4142ac47d6f85922a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 5
+  maxForce: 10
+--- !u!114 &346191528265329093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ccff820858ade47b95c610e3bd8f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+--- !u!114 &4237151226917088626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c15fd82488498c4ea3f219dce0fc972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 5
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  scale: 4
+  forwardFeelerDepth: 5
+  sideFeelerDepth: 5
+  frontFeelerUpdatesPerSecond: 5
+  sideFeelerUpdatesPerSecond: 5
+  feelerRadius: 2
+  forceType: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &4551333793400092958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8946ea69547d1a14b9e905a8fdc415b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 3
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  slowingDistance: 15
+  targetGameObject: {fileID: 0}
+--- !u!114 &7602893527180212142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a6218f18038bd40959f2ef0b3a7aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  distance: 15
+  radius: 10
+  jitter: 100
+--- !u!114 &6533560363297308671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fc419a33e823746bcded60ccdd558b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiberium: 7
+  bulletPrefab: {fileID: 7390136343811685161, guid: ae30e55a6b7c9df4e827f669f7fa6235,
+    type: 3}
 --- !u!1 &8813897858953667768
 GameObject:
   m_ObjectHideFlags: 0
